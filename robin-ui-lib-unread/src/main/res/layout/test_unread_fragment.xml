@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <com.cting.robin.ui.lib.unread.test.TestUnreadView
+            android:id="@+id/view7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff000000"
+            app:layout_constraintStart_toStartOf="@+id/unread_test_missed_call"
+            app:unread_anim_type="none"
+            app:unread_icon="@drawable/unread_ic_mms_light"
+            app:unread_layout="@layout/unread_tile_light" />
+
+        <com.cting.robin.ui.lib.unread.test.TestUnreadView
+            android:id="@+id/view8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff000000"
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintStart_toEndOf="@+id/view7"
+            app:unread_anim_type="none"
+            app:unread_icon="@drawable/unread_ic_call_light"
+            app:unread_layout="@layout/unread_tile_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <com.cting.robin.ui.lib.unread.test.TestUnreadView
+            android:id="@+id/unread_test_anim_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/unread_test_unread_message"
+            app:layout_constraintStart_toEndOf="@+id/unread_test_unread_message"
+            app:unread_alwaysShowZero="true"
+            app:unread_anim_type="scale" />
+
+        <com.cting.robin.ui.lib.unread.test.TestUnreadView
+            android:id="@+id/unread_test_anim_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/unread_test_anim_1"
+            app:layout_constraintTop_toBottomOf="@+id/unread_test_anim_1"
+            app:unread_alwaysShowZero="false"
+            app:unread_anim_type="scale" />
+
+
+        <com.cting.robin.ui.lib.unread.test.TestUnreadView
+            android:id="@+id/unread_test_anim_shake_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/unread_test_anim_1"
+            app:layout_constraintStart_toEndOf="@+id/unread_test_anim_1"
+            app:unread_alwaysShowZero="true"
+            app:unread_anim_type="shake"
+            app:unread_count_textBackground="@drawable/unread_count_round_rect_blue_bg" />
+
+        <com.cting.robin.ui.lib.unread.test.TestUnreadView
+            android:id="@+id/unread_test_anim_shake_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/unread_test_anim_shake_1"
+            app:layout_constraintTop_toBottomOf="@+id/unread_test_anim_shake_1"
+            app:unread_alwaysShowZero="false"
+            app:unread_anim_type="shake"
+            app:unread_count_textBackground="@drawable/unread_count_round_rect_blue_bg" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+
+        <com.cting.robin.ui.lib.unread.test.TestUnreadView
+            android:id="@+id/unread_test_anim_transit_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/unread_test_anim_shake_1"
+            app:layout_constraintStart_toEndOf="@+id/unread_test_anim_shake_1"
+            app:unread_anim_type="transit" />
+
+        <com.cting.robin.ui.lib.unread.test.TestUnreadView
+            android:id="@+id/unread_test_anim_transit_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/unread_test_anim_transit_1"
+            app:layout_constraintTop_toBottomOf="@+id/unread_test_anim_transit_1"
+            app:unread_alwaysShowZero="false"
+            app:unread_anim_type="transit" />
+
+        <com.cting.robin.ui.lib.unread.UnreadMsgView
+            android:id="@+id/unread_test_unread_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/unread_test_missed_call"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+        <com.cting.robin.ui.lib.unread.MissedCallView
+            android:id="@+id/unread_test_missed_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/unread_test_read_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/unread_test_unread_message"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <com.cting.robin.ui.lib.unread.test.TestUnreadView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:unread_alwaysShowZero="false"
+            app:unread_anim_type="none"
+            app:unread_icon="@drawable/unread_ic_call_old"
+            app:unread_label="Call"
+            app:unread_layout="@layout/unread_tile_launcher" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="20dp"
+            android:layout_height="1dp" />
+
+        <com.cting.robin.ui.lib.unread.test.TestUnreadView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:unread_alwaysShowZero="false"
+            app:unread_anim_type="none"
+            app:unread_icon="@drawable/unread_ic_mms_old"
+            app:unread_label="Message"
+            app:unread_layout="@layout/unread_tile_launcher" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/unread_test_read_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="read"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/unread_test_receive_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unread"
+            app:layout_constraintBottom_toBottomOf="@+id/unread_test_read_btn"
+            app:layout_constraintStart_toEndOf="@+id/unread_test_read_btn" />
+
+    </LinearLayout>
+
+</LinearLayout>

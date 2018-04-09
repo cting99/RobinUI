@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- don't change begin -->
+    <dimen name="clock_view_best_diameter">250dp</dimen>
+    <dimen name="clock_time_best_text_size">45dp</dimen>
+    <!-- don't change end -->
+
+    <dimen name="test_clock_view_diameter">250dp</dimen>
+</resources>

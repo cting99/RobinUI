@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include layout="@layout/dial_keypad" />-->
+    <com.cting.support.dialpad.ui.DialKeyPad
+        android:id="@+id/dialpad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialkey_pad_height"
+        app:layout_constraintBottom_toTopOf="@+id/dial_action_bar_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:showIn="@layout/dialpad_layout" />
+
+    <LinearLayout
+        android:id="@+id/dial_action_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dial_bottom_bar_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/show_dialpad_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/dial_btn_bg"
+            android:src="@drawable/dial_ic_show_dialpad"
+            android:text="dialpad"/>
+
+
+
+        <com.cting.support.dialpad.ui.DialButton
+            android:id="@+id/dial_btn"
+            android:layout_weight="1.0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <com.cting.support.dialpad.ui.DialButton
+            android:id="@+id/dial_btn_dual"
+            android:layout_weight="1.0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <!--<include layout="@layout/dial_button_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="60dp" />-->
+
+        <ImageButton
+            android:id="@+id/send_msg_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/dial_btn_bg"
+            android:src="@drawable/dial_ic_send_message"
+            android:text="msg"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/input_edit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dial_input_height"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:textSize="20dp"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/dialpad"
+        app:layout_constraintEnd_toStartOf="@+id/delete_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/delete_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/dial_ic_delete_input"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/input_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_edit" />
+
+</android.support.constraint.ConstraintLayout>

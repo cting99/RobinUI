@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseClockView">
+        <attr name="clock_showSecond" format="boolean" />
+        <attr name="clock_type">
+            <enum name="digital" value="1" />
+            <enum name="analog" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ClockAnalog">
+        <attr name="clock_analog_decor">
+            <enum name="blue" value="1" />
+            <enum name="silver" value="2" />
+            <enum name="dark" value="3" />
+        </attr>
+        <attr name="clock_hand_hour" format="reference" />
+        <attr name="clock_hand_minute" format="reference" />
+        <attr name="clock_hand_second" format="reference" />
+        <attr name="clock_dial_background" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ClockDigital">
+        <attr name="clock_digital_layout" format="reference"/>
+    </declare-styleable>
+</resources>

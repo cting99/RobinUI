@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RobinUI.iml" filepath="$PROJECT_DIR$/RobinUI.iml" />
+      <module fileurl="file://D:\Android\workspace\RobinUI\app-ui\app.iml" filepath="D:\Android\workspace\RobinUI\app-ui\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-mini-window/app-mini-window.iml" filepath="$PROJECT_DIR$/app-mini-window/app-mini-window.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-music/app-music.iml" filepath="$PROJECT_DIR$/app-music/app-music.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-ui-sample/app-ui.iml" filepath="$PROJECT_DIR$/app-ui-sample/app-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robin-support-common-tools/robin-support-common-tools.iml" filepath="$PROJECT_DIR$/robin-support-common-tools/robin-support-common-tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robin-ui-lib-clock/robin-ui-lib-clock.iml" filepath="$PROJECT_DIR$/robin-ui-lib-clock/robin-ui-lib-clock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robin-ui-lib-music/robin-ui-lib-music.iml" filepath="$PROJECT_DIR$/robin-ui-lib-music/robin-ui-lib-music.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robin-ui-lib-unread/robin-ui-lib-unread.iml" filepath="$PROJECT_DIR$/robin-ui-lib-unread/robin-ui-lib-unread.iml" />
+    </modules>
+  </component>
+</project>

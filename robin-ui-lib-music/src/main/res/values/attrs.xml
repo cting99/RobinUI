@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MusicControlButton">
+        <attr name="music_keyCode">
+            <enum name="play_pause" value="85" />
+            <enum name="stop" value="86" />
+            <enum name="next" value="87" />
+            <enum name="prev" value="88" />
+            <enum name="rewind" value="89" />
+            <enum name="fast_forward" value="90" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MusicPlayPauseButton">
+        <attr name="music_play_icon" format="reference" />
+        <attr name="music_pause_icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MusicSeekBar">
+        <attr name="music_seekbar_show_time" format="boolean"/>
+    </declare-styleable>
+</resources>

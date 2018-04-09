@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app-mini-window" />
+            <option value="$PROJECT_DIR$/app-music" />
+            <option value="$PROJECT_DIR$/app-ui-sample" />
+            <option value="$PROJECT_DIR$/robin-support-common-tools" />
+            <option value="$PROJECT_DIR$/robin-ui-lib-clock" />
+            <option value="$PROJECT_DIR$/robin-ui-lib-music" />
+            <option value="$PROJECT_DIR$/robin-ui-lib-unread" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

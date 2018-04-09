@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MiniWindow</string>
+    <string name="mini_window_nav_menu_title_clock">时间</string>
+    <string name="mini_window_nav_menu_title_music">音乐</string>
+    <string name="mini_window_nav_menu_title_alarm">闹钟</string>
+    <string name="mini_window_nav_menu_title_call">通话</string>
+</resources>

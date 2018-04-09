@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mini_window_nav_menu_clock"
+        android:icon="@drawable/mini_window_nav_ic_clock"
+        android:title="@string/mini_window_nav_menu_title_clock" />
+
+    <item
+        android:id="@+id/mini_window_nav_menu_music"
+        android:icon="@drawable/mini_window_nav_ic_music"
+        android:title="@string/mini_window_nav_menu_title_music" />
+    <item
+        android:id="@+id/mini_window_nav_menu_alarm"
+        android:icon="@drawable/mini_window_nav_ic_alarm"
+        android:title="@string/mini_window_nav_menu_title_alarm" />
+
+    <item
+        android:id="@+id/mini_window_nav_menu_call"
+        android:icon="@drawable/mini_window_nav_ic_call"
+        android:title="@string/mini_window_nav_menu_title_call" />
+
+</menu>

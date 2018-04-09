@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.cting.robin.ui.lib.music.MusicControlButton
+                android:layout_width="@dimen/music_control_btn_width"
+                android:layout_height="@dimen/music_control_btn_height"
+                app:music_keyCode="rewind"
+                app:srcCompat="@drawable/music_ic_circular_rewind" />
+
+            <com.cting.robin.ui.lib.music.MusicControlButton
+                android:id="@+id/test_music_prev_btn"
+                android:layout_width="@dimen/music_control_btn_width"
+                android:layout_height="@dimen/music_control_btn_height"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/test_music_playpause_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/test_music_playpause_btn"
+                app:music_keyCode="prev"
+                app:srcCompat="@drawable/music_ic_circular_prev" />
+
+            <com.cting.robin.ui.lib.music.MusicControlButton
+                android:id="@+id/test_music_playpause_btn"
+                android:layout_width="@dimen/music_control_btn_width"
+                android:layout_height="@dimen/music_control_btn_height"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:music_keyCode="play_pause"
+                app:srcCompat="@drawable/music_ic_circular_play" />
+
+
+            <com.cting.robin.ui.lib.music.MusicControlButton
+                android:id="@+id/test_music_next_btn"
+                android:layout_width="@dimen/music_control_btn_width"
+                android:layout_height="@dimen/music_control_btn_height"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/test_music_playpause_btn"
+                app:layout_constraintTop_toTopOf="@+id/test_music_playpause_btn"
+                app:music_keyCode="next"
+                app:srcCompat="@drawable/music_ic_circular_next" />
+
+            <com.cting.robin.ui.lib.music.MusicControlButton
+                android:layout_width="@dimen/music_control_btn_width"
+                android:layout_height="@dimen/music_control_btn_height"
+                app:music_keyCode="rewind"
+                app:srcCompat="@drawable/music_ic_circular_fast_forward" />
+        </LinearLayout>
+
+
+        <com.cting.robin.ui.lib.music.MusicPlayPauseButton
+            android:id="@+id/test_music_playpause_simple_btn_1"
+            android:layout_width="@dimen/music_control_btn_width"
+            android:layout_height="@dimen/music_control_btn_height"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/test_music_playpause_btn"
+            app:srcCompat="@drawable/music_ic_circular_play" />
+
+        <com.cting.robin.ui.lib.music.MusicPlayPauseButton
+            android:id="@+id/test_music_playpause_simple_btn_2"
+            android:layout_width="@dimen/music_control_btn_width"
+            android:layout_height="@dimen/music_control_btn_height"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/test_music_playpause_simple_btn_1"
+            app:music_pause_icon="@drawable/music_ic_pause"
+            app:music_play_icon="@drawable/music_ic_play"
+            app:srcCompat="@drawable/music_ic_circular_play" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/test_music_kugoo_play_bar"
+        layout="@layout/music_kugoo_play_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    <!--
+        -->
+</LinearLayout>

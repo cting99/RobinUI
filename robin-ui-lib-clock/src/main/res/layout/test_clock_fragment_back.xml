@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Switch
+            android:id="@+id/test_clock_has_second_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:text="support second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <cting.com.robin.ui.lib.clock.ClockPrototype
+            android:id="@+id/test_clock_digital"
+            android:layout_width="@dimen/test_clock_view_diameter"
+            android:layout_height="@dimen/test_clock_view_diameter"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="48dp"
+            app:clock_showSecond="true"
+            app:clock_type="digital"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/test_clock_has_second_switch" />
+
+        <cting.com.robin.ui.lib.clock.ClockPrototype
+            android:id="@+id/test_clock_analog"
+            android:layout_width="@dimen/test_clock_view_diameter"
+            android:layout_height="@dimen/test_clock_view_diameter"
+            android:layout_marginEnd="36dp"
+            app:clock_showSecond="true"
+            app:clock_type="analog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/test_clock_digital" />
+
+        <cting.com.robin.ui.lib.clock.ClockDigital
+            android:id="@+id/test_clock_digital_custom"
+            android:layout_width="@dimen/test_clock_view_diameter"
+            android:layout_height="@dimen/test_clock_view_diameter"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/test_clock_digital"
+            app:layout_constraintTop_toBottomOf="@+id/test_clock_digital" />
+
+        <cting.com.robin.ui.lib.clock.ClockAnalog
+            android:id="@+id/test_clock_analog_longines_blue"
+            android:layout_width="@dimen/test_clock_view_diameter"
+            android:layout_height="@dimen/test_clock_view_diameter"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/test_clock_analog"
+            app:layout_constraintTop_toBottomOf="@+id/test_clock_analog" />
+
+        <cting.com.robin.ui.lib.clock.ClockAnalog
+            android:id="@+id/test_clock_analog_longines_silver"
+            android:layout_width="@dimen/test_clock_view_diameter"
+            android:layout_height="@dimen/test_clock_view_diameter"
+            android:layout_marginTop="8dp"
+            app:clock_dial_background="@drawable/clock_longines_silver_dial_bg"
+            app:clock_hand_hour="@drawable/clock_longines_silver_hand_hour"
+            app:clock_hand_minute="@drawable/clock_longines_silver_hand_minute"
+            app:clock_hand_second="@drawable/clock_longines_silver_hand_second"
+            app:layout_constraintStart_toStartOf="@+id/test_clock_analog_longines_blue"
+            app:layout_constraintTop_toBottomOf="@+id/test_clock_analog_longines_blue" />
+        <!--
+            <cting.com.robin.ui.lib.clock.RobinDigitalClock
+                android:id="@+id/clock_digital_1"
+                android:layout_width="@dimen/test_clock_view_diameter"
+                android:layout_height="@dimen/test_clock_view_diameter"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:clock_showSecond="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <cting.com.robin.ui.lib.clock.ClockPrototype
+                android:id="@+id/test_clock_prototype_digital"
+                android:layout_width="@dimen/test_clock_view_diameter"
+                android:layout_height="@dimen/test_clock_view_diameter"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:clock_showSecond="true"
+                app:clock_type="digital"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clock_digital_1" />
+
+            <cting.com.robin.ui.lib.clock.ClockAnalog
+                android:id="@+id/test_clock_prototype_analog"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:clock_showSecond="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clock_digital_1" />-->
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mini_window_clock_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/mini_window_activity"
+    android:orientation="vertical">
+
+    <com.cting.robin.ui.miniwindow.ui.ClockSwitcher
+        android:id="@+id/mini_window_multi_view_switcher"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/clock_view_best_diameter"
+        android:layout_height="@dimen/clock_view_best_diameter">
+
+        <cting.com.robin.ui.lib.clock.ClockAnalog
+            android:layout_width="@dimen/clock_view_best_diameter"
+            android:layout_height="@dimen/clock_view_best_diameter"
+            android:layout_gravity="center_horizontal"
+            app:clock_analog_decor="blue" />
+
+        <cting.com.robin.ui.lib.clock.ClockAnalog
+            android:layout_width="@dimen/clock_view_best_diameter"
+            android:layout_height="@dimen/clock_view_best_diameter"
+            android:layout_gravity="center_horizontal"
+            app:clock_analog_decor="silver" />
+
+        <cting.com.robin.ui.lib.clock.ClockDigital
+            android:layout_width="@dimen/clock_view_best_diameter"
+            android:layout_height="@dimen/clock_view_best_diameter"
+            android:layout_gravity="center_horizontal" />
+
+    </com.cting.robin.ui.miniwindow.ui.ClockSwitcher>
+
+    <Button
+        android:id="@+id/mini_window_clock_switch_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="switch"/>
+
+</LinearLayout>

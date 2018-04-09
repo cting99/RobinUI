@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dial_key_width">50dp</dimen>
+    <dimen name="dial_key_height">30dp</dimen>
+    <dimen name="dialkey_pad_height">250dp</dimen>
+    <dimen name="dial_input_height">55dp</dimen>
+</resources>

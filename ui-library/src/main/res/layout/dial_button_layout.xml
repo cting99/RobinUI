@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dial_voice_call_blue_bg"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/dial_icon"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:paddingRight="3dp"
+        android:src="@drawable/dial_ic_voice_call_blue"/>
+    <TextView
+        android:id="@+id/dial_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="中国移动"
+        android:textColor="#000000" />
+
+</LinearLayout>

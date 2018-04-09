@@ -1,0 +1,4 @@
+include ':app-ui-sample'
+include ':app-music'
+include ':app-mini-window'
+include ':robin-support-common-tools', ':robin-ui-lib-unread', "robin-ui-lib-music", "robin-ui-lib-clock"
