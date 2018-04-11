@@ -6,7 +6,8 @@
       <module fileurl="file://D:\Android\workspace\RobinUI\app-ui\app.iml" filepath="D:\Android\workspace\RobinUI\app-ui\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app-mini-window/app-mini-window.iml" filepath="$PROJECT_DIR$/app-mini-window/app-mini-window.iml" />
       <module fileurl="file://$PROJECT_DIR$/app-music/app-music.iml" filepath="$PROJECT_DIR$/app-music/app-music.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app-ui-sample/app-ui.iml" filepath="$PROJECT_DIR$/app-ui-sample/app-ui.iml" />
+      <module fileurl="file://D:\Android\workspace\RobinUI\app-ui-sample\app-ui.iml" filepath="D:\Android\workspace\RobinUI\app-ui-sample\app-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-ui-sample/app-ui-sample.iml" filepath="$PROJECT_DIR$/app-ui-sample/app-ui-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/robin-support-common-tools/robin-support-common-tools.iml" filepath="$PROJECT_DIR$/robin-support-common-tools/robin-support-common-tools.iml" />
       <module fileurl="file://$PROJECT_DIR$/robin-ui-lib-clock/robin-ui-lib-clock.iml" filepath="$PROJECT_DIR$/robin-ui-lib-clock/robin-ui-lib-clock.iml" />
       <module fileurl="file://$PROJECT_DIR$/robin-ui-lib-music/robin-ui-lib-music.iml" filepath="$PROJECT_DIR$/robin-ui-lib-music/robin-ui-lib-music.iml" />

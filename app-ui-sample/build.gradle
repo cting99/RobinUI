@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId 'com.cting.robinui.miniwindow'
+        applicationId 'com.cting.robin.ui'
         minSdkVersion 24
         targetSdkVersion 26
         versionCode 1
