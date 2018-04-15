@@ -15,7 +15,7 @@ import com.cting.robin.ui.music.service.MusicPlaybackService;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import cting.com.robin.support.common.activities.BasePermissionCheckActivity;
+import cting.com.robineeee.support.common.activities.BasePermissionCheckActivity;
 
 public class MusicActivity extends BasePermissionCheckActivity {
 

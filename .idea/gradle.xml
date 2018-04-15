@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/app-ui-sample" />
             <option value="$PROJECT_DIR$/robin-support-common-tools" />
             <option value="$PROJECT_DIR$/robin-ui-lib-clock" />
+            <option value="$PROJECT_DIR$/robin-ui-lib-common" />
+            <option value="$PROJECT_DIR$/robin-ui-lib-incall" />
             <option value="$PROJECT_DIR$/robin-ui-lib-music" />
             <option value="$PROJECT_DIR$/robin-ui-lib-unread" />
           </set>

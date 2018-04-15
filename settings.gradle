@@ -1,4 +1,4 @@
-include ':app-ui-sample'
+include ':app-ui-sample', ':robin-ui-lib-incall', ':robin-ui-lib-common'
 include ':app-music'
 include ':app-mini-window'
 include ':robin-support-common-tools', ':robin-ui-lib-unread', "robin-ui-lib-music", "robin-ui-lib-clock"

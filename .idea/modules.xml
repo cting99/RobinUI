@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/app-ui-sample/app-ui-sample.iml" filepath="$PROJECT_DIR$/app-ui-sample/app-ui-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/robin-support-common-tools/robin-support-common-tools.iml" filepath="$PROJECT_DIR$/robin-support-common-tools/robin-support-common-tools.iml" />
       <module fileurl="file://$PROJECT_DIR$/robin-ui-lib-clock/robin-ui-lib-clock.iml" filepath="$PROJECT_DIR$/robin-ui-lib-clock/robin-ui-lib-clock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robin-ui-lib-common/robin-ui-lib-common.iml" filepath="$PROJECT_DIR$/robin-ui-lib-common/robin-ui-lib-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robin-ui-lib-incall/robin-ui-lib-incall.iml" filepath="$PROJECT_DIR$/robin-ui-lib-incall/robin-ui-lib-incall.iml" />
       <module fileurl="file://$PROJECT_DIR$/robin-ui-lib-music/robin-ui-lib-music.iml" filepath="$PROJECT_DIR$/robin-ui-lib-music/robin-ui-lib-music.iml" />
       <module fileurl="file://$PROJECT_DIR$/robin-ui-lib-unread/robin-ui-lib-unread.iml" filepath="$PROJECT_DIR$/robin-ui-lib-unread/robin-ui-lib-unread.iml" />
     </modules>

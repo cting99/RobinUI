@@ -14,19 +14,19 @@
         android:layout_width="@dimen/clock_view_best_diameter"
         android:layout_height="@dimen/clock_view_best_diameter">
 
-        <cting.com.robin.ui.lib.clock.ClockAnalog
+        <cting.com.robineeee.ui.lib.clock.ClockAnalog
             android:layout_width="@dimen/clock_view_best_diameter"
             android:layout_height="@dimen/clock_view_best_diameter"
             android:layout_gravity="center_horizontal"
             app:clock_analog_decor="blue" />
 
-        <cting.com.robin.ui.lib.clock.ClockAnalog
+        <cting.com.robineeee.ui.lib.clock.ClockAnalog
             android:layout_width="@dimen/clock_view_best_diameter"
             android:layout_height="@dimen/clock_view_best_diameter"
             android:layout_gravity="center_horizontal"
             app:clock_analog_decor="silver" />
 
-        <cting.com.robin.ui.lib.clock.ClockDigital
+        <cting.com.robineeee.ui.lib.clock.ClockDigital
             android:layout_width="@dimen/clock_view_best_diameter"
             android:layout_height="@dimen/clock_view_best_diameter"
             android:layout_gravity="center_horizontal" />

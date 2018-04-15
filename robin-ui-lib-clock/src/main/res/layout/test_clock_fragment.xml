@@ -36,14 +36,14 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <cting.com.robin.ui.lib.clock.ClockPrototype
+            <cting.com.robineeee.ui.lib.clock.ClockPrototype
                 android:id="@+id/test_clock_digital"
                 android:layout_width="@dimen/test_clock_view_diameter"
                 android:layout_height="@dimen/test_clock_view_diameter"
                 app:clock_showSecond="true"
                 app:clock_type="digital" />
 
-            <cting.com.robin.ui.lib.clock.ClockPrototype
+            <cting.com.robineeee.ui.lib.clock.ClockPrototype
                 android:id="@+id/test_clock_analog"
                 android:layout_marginTop="8dp"
                 android:layout_marginStart="8dp"
@@ -65,12 +65,12 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <cting.com.robin.ui.lib.clock.ClockAnalog
+            <cting.com.robineeee.ui.lib.clock.ClockAnalog
                 android:id="@+id/test_clock_analog_longines_blue"
                 android:layout_width="@dimen/test_clock_view_diameter"
                 android:layout_height="@dimen/test_clock_view_diameter" />
 
-            <cting.com.robin.ui.lib.clock.ClockAnalog
+            <cting.com.robineeee.ui.lib.clock.ClockAnalog
                 android:id="@+id/test_clock_analog_longines_silver"
                 android:layout_width="@dimen/test_clock_view_diameter"
                 android:layout_height="@dimen/test_clock_view_diameter"
@@ -87,7 +87,7 @@
             android:layout_marginTop="15dp"
             android:text="digital:" />
 
-        <cting.com.robin.ui.lib.clock.ClockDigital
+        <cting.com.robineeee.ui.lib.clock.ClockDigital
             android:id="@+id/test_clock_digital_custom"
             android:layout_width="@dimen/clock_view_best_diameter"
             android:layout_height="@dimen/clock_view_best_diameter" />

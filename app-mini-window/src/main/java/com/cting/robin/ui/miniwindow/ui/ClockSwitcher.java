@@ -6,24 +6,13 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewPropertyAnimator;
-import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
-import android.view.animation.DecelerateInterpolator;
 import android.view.animation.RotateAnimation;
-import android.view.animation.TranslateAnimation;
 import android.widget.Toast;
 import android.widget.ViewAnimator;
 
-import com.cting.robin.ui.miniwindow.music.MiniMusicContract;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import cting.com.robin.ui.lib.clock.BaseClockView;
-import cting.com.robin.ui.lib.clock.ClockAnalog;
-import cting.com.robin.ui.lib.clock.ClockDigital;
-import cting.com.robin.ui.lib.clock.IClockView;
+import cting.com.robineeee.ui.lib.clock.ClockAnalog;
+import cting.com.robineeee.ui.lib.clock.ClockDigital;
 
 
 public class ClockSwitcher extends ViewAnimator {

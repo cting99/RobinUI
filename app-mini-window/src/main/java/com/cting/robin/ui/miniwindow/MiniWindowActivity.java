@@ -5,14 +5,13 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.view.MenuItem;
-import android.widget.FrameLayout;
 
 import com.cting.robin.ui.miniwindow.clock.MiniClockFragment;
 import com.cting.robin.ui.miniwindow.music.MiniMusicFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import cting.com.robin.support.common.activities.BasePermissionCheckActivity;
+import cting.com.robineeee.support.common.activities.BasePermissionCheckActivity;
 
 public class MiniWindowActivity extends BasePermissionCheckActivity
         implements BottomNavigationView.OnNavigationItemSelectedListener{

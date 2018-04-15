@@ -11,21 +11,20 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import com.cting.robin.ui.lib.common.test.TestCommonUIFragment;
 import com.cting.robin.ui.lib.music.test.TestMusicFragment;
 import com.cting.robin.ui.lib.unread.test.TestUnreadFragment;
 
-import cting.com.robin.support.common.activities.BasePermissionCheckActivity;
-import cting.com.robin.ui.lib.clock.test.TestClockFragment;
+import cting.com.robin.ui.lib.incall.test.TestIncallFragment;
+import cting.com.robineeee.support.common.activities.BasePermissionCheckActivity;
+import cting.com.robineeee.ui.lib.clock.test.TestClockFragment;
 
 public class MainActivity extends BasePermissionCheckActivity {
-
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -61,7 +60,8 @@ public class MainActivity extends BasePermissionCheckActivity {
         fab.setVisibility(View.GONE);
 
     }
-//
+
+    //
     @Override
     protected String[] getRequestPermission() {
         return new String[]{
@@ -111,7 +111,9 @@ public class MainActivity extends BasePermissionCheckActivity {
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
         private int mCount = 0;
-//        public final int POS_MUSIC = mCount++;
+        public final int POS_COMMON = mCount++;
+        //        public final int POS_MUSIC = mCount++;
+        public final int POS_INCALL = mCount++;
         public final int POS_CLOCK = mCount++;
         public final int POS_UNREAD = mCount++;
 
@@ -127,6 +129,10 @@ public class MainActivity extends BasePermissionCheckActivity {
                 return new TestClockFragment();
             } else if (position == POS_UNREAD) {
                 return new TestUnreadFragment();
+            } else if (position == POS_INCALL) {
+                return new TestIncallFragment();
+            } else if (position == POS_COMMON) {
+                return new TestCommonUIFragment();
 //            } else if (position == POS_MUSIC) {
 //                return new TestMusicFragment();
             }

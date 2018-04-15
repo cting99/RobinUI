@@ -23,7 +23,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <cting.com.robin.ui.lib.clock.ClockPrototype
+        <cting.com.robineeee.ui.lib.clock.ClockPrototype
             android:id="@+id/test_clock_digital"
             android:layout_width="@dimen/test_clock_view_diameter"
             android:layout_height="@dimen/test_clock_view_diameter"
@@ -34,7 +34,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/test_clock_has_second_switch" />
 
-        <cting.com.robin.ui.lib.clock.ClockPrototype
+        <cting.com.robineeee.ui.lib.clock.ClockPrototype
             android:id="@+id/test_clock_analog"
             android:layout_width="@dimen/test_clock_view_diameter"
             android:layout_height="@dimen/test_clock_view_diameter"
@@ -44,7 +44,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/test_clock_digital" />
 
-        <cting.com.robin.ui.lib.clock.ClockDigital
+        <cting.com.robineeee.ui.lib.clock.ClockDigital
             android:id="@+id/test_clock_digital_custom"
             android:layout_width="@dimen/test_clock_view_diameter"
             android:layout_height="@dimen/test_clock_view_diameter"
@@ -52,7 +52,7 @@
             app:layout_constraintStart_toStartOf="@+id/test_clock_digital"
             app:layout_constraintTop_toBottomOf="@+id/test_clock_digital" />
 
-        <cting.com.robin.ui.lib.clock.ClockAnalog
+        <cting.com.robineeee.ui.lib.clock.ClockAnalog
             android:id="@+id/test_clock_analog_longines_blue"
             android:layout_width="@dimen/test_clock_view_diameter"
             android:layout_height="@dimen/test_clock_view_diameter"
@@ -60,7 +60,7 @@
             app:layout_constraintStart_toStartOf="@+id/test_clock_analog"
             app:layout_constraintTop_toBottomOf="@+id/test_clock_analog" />
 
-        <cting.com.robin.ui.lib.clock.ClockAnalog
+        <cting.com.robineeee.ui.lib.clock.ClockAnalog
             android:id="@+id/test_clock_analog_longines_silver"
             android:layout_width="@dimen/test_clock_view_diameter"
             android:layout_height="@dimen/test_clock_view_diameter"
