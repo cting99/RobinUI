@@ -1,4 +1,4 @@
-package cting.com.robin.ui.lib.clock;
+package com.cting.common;
 
 import org.junit.Test;
 
